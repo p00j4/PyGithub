@@ -26,6 +26,9 @@ Then play with your Github objects::
     for repo in g.get_user().get_repos():
         print(repo.name)
         repo.edit(has_wiki=False)
+        
+Get your speicific repo::
+    repo = self.github.get_repo(":owner_name/:repo_name", lazy=False)
 
 Download and install
 --------------------
